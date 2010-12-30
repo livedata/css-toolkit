@@ -1,0 +1,110 @@
+
+/* Custom Grid Container Structure
++---------------------------------------*/
+.row, .column {
+	display: block;
+	position: relative;
+	padding: 0;
+	float: left;
+}
+.row {
+	margin: 10px 0;
+}
+div.row { width: auto; } /* This is so we can apply a height and not the width */
+.column {
+	height: auto;
+	margin: 10px;
+}
+	.column .row 	{ width: 100%; } 	/* Nesting Adjustment */
+	.column .column { height: auto; }	/* Nesting Adjustment */
+	.row .column 	{ height: 100%; }	/* Nesting Adjustment */
+	
+	.column .alpha { margin-left: 0; }
+	.column .omega { margin-right: 0; }
+	
+.alpha 				{ clear: left; } 			/* Use with left-most Section */
+.omega 				{ clear: right; } 			/* Use with right-most Section */
+
+.wrapper .heaven	{ margin-top: 0; }
+.wrapper .hell		{ margin-bottom: 0; }
+.wrapper .earth		{ margin-bottom: 0;	margin-top: 0; }
+
+
+.column .earth 	{ margin: 0; }	
+	 img.alpha 	{ margin-left: 0; margin-top: 0; } 		/* Adjust for inline images */
+	 img.omega 	{ margin-right: 0; margin-bottom: 0; } 	/* Adjust for inline images */
+
+	.border { border: 1px solid; }
+	[class~="column"][class~="border"] { 
+		margin: 9px; 
+	}
+.fluid, .fixed { padding: 0; }
+.fluid { width: auto; }
+.fixed {
+	width: 960px;
+	margin: 0 auto;
+	height: 100%;
+	clear: both;
+	overflow: hidden;
+}
+
+	
+/* 960px Mini-Grid (Testing)
++---- Row Structure
++---- 10px Margins
++-------------------------------------------*/
+[class~="row"][class~="sixteenth"]			{ height: 40px;  } /*  1/16 	60  */
+[class~="row"][class~="twelfth"]			{ height: 60px;  } /*  1/12   	80	*/
+[class~="row"][class~="eighth"]				{ height: 100px; } /*  1/8   	120	*/
+[class~="row"][class~="sixth"]				{ height: 140px; } /*  1/6   	160	*/
+[class~="row"][class~="threesixteenths"]	{ height: 160px; } /*  3/16   	180	*/
+[class~="row"][class~="fourth"] 			{ height: 220px; } /*  1/4   	240	*/
+[class~="row"][class~="fivesixteenths"]		{ height: 280px; } /*  5/16   	300	*/
+[class~="row"][class~="third"] 				{ height: 300px; } /*  1/3   	320	*/
+[class~="row"][class~="threeeighths"]		{ height: 340px; } /*  3/8   	360	*/
+[class~="row"][class~="fivetwelfths"]		{ height: 380px; } /*  5/12   	400	*/
+[class~="row"][class~="sevensixteenths"]	{ height: 400px; } /*  7/16   	420	*/
+[class~="row"][class~="half"] 				{ height: 460px; } /*  1/2   	480	*/
+[class~="row"][class~="ninesixteenths"]		{ height: 520px; } /*  9/16   	540	*/
+[class~="row"][class~="seventwelfths"]		{ height: 540px; } /*  7/12   	560	*/
+[class~="row"][class~="fiveeights"]			{ height: 580px; } /*  5/8   	600	*/
+[class~="row"][class~="twothirds"] 			{ height: 620px; } /*  2/3   	640	*/
+[class~="row"][class~="elevensixteenths"]	{ height: 640px; } /*  11/16   	660	*/
+[class~="row"][class~="threefourths"] 		{ height: 700px; } /*  3/4   	720	*/
+[class~="row"][class~="thirteensixteenths"] { height: 760px; } /*  13/16  	780	*/
+[class~="row"][class~="fivesixths"]			{ height: 780px; } /*  5/6   	800	*/
+[class~="row"][class~="fifteensixteenths"] 	{ height: 880px; } /*  15/16  	900	*/
+
+[class~="row"][class~="full"] 				{ height: 940px; } /*  1/1   	960	*/
+/*----------------------------------------------------------------------------------*/
+
+/* 960px Mini-Grid 
++---- Column Structure
++---- 10px Margins
++-------------------------------------------*/
+.sixteenth			{ width: 40px; 	} /*  1/16 		60  */
+.twelfth			{ width: 60px;  } /*  1/12   	80	*/
+.eighth				{ width: 100px;	} /*  1/8   	120	*/
+.sixth				{ width: 140px; } /*  1/6   	160	*/
+.threesixteenths	{ width: 160px; } /*  3/16   	180	*/
+.fourth 			{ width: 220px; } /*  1/4   	240	*/
+.fivesixteenths		{ width: 280px; } /*  5/16   	300	*/
+.third 				{ width: 300px; } /*  1/3   	320	*/
+.threeeighths		{ width: 340px; } /*  3/8   	360	*/
+.fivetwelfths		{ width: 380px; } /*  5/12   	400	*/
+.sevensixteenths	{ width: 400px; } /*  7/16   	420	*/
+.half 				{ width: 460px; } /*  1/2   	480	*/
+.ninesixteenths		{ width: 520px; } /*  9/16   	540	*/
+.seventwelfths		{ width: 540px; } /*  7/12   	560	*/
+.fiveeighths		{ width: 580px; } /*  5/8   	600	*/
+.twothirds 			{ width: 620px; } /*  2/3   	640	*/
+.elevensixteenths	{ width: 640px; } /*  11/16   	660	*/
+.threefourths 		{ width: 700px; } /*  3/4   	720	*/
+.thirteensixteenths { width: 760px; } /*  13/16  	780	*/
+.fivesixths			{ width: 780px; } /*  5/6   	800	*/
+.seveneighths 		{ width: 820px; } /*  7/8		840 */
+.eleventwelfths 	{ width: 860px; } /*  11/12		880 */
+.fifteensixteenths 	{ width: 880px; } /*  15/16  	900	*/
+
+.full 				{ width: 940px; } /*  1/1   	960	*/
+/*------------------------------------------------------*/

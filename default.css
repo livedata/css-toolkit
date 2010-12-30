@@ -1,0 +1,81 @@
+/* Standard Page Development Elements
++-------------------------------------------*/
+
+div { zoom: 1; } /* Chrome + IE Display Correction */
+body {
+	font-size: 100%;
+	/* font-size: 62.5%;  /* 1em = 10px */
+	line-height: 1.5;
+}
+
+/* Firefox Inner Focus Ring Fix 
+ * (Because its annoying)
++-------------------------------------------*/
+input::-moz-focus-inner,
+button::-moz-focus-inner, 
+a::-moz-focus-inner { border: 0; }
+
+/* General
++-------------------------------------------*/
+p {
+	margin: 20px;
+}
+p,ul,ol,dl,textarea,address,dl {
+	font-size: 14px;
+}
+blockquote {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+	padding-left: 15px;
+	border-left: 3px solid #ccc;
+	max-width: 600px;
+}
+
+/* Lists
++---------------------------------------*/
+		
+dl,ul,ol {
+	margin: 30px;
+}
+	dl dt:first-child { margin-top: 10px; }
+	dt {
+		font-weight: 600;
+		margin: 20px 0 10px;
+		padding: 0;
+		font-size: 20px;
+	}
+	dd {
+		padding: 10px;
+	}
+
+/* Special Situation Tags
+------------------------------------------*/
+.seo {
+	position: absolute;
+	left: -4000px;
+	top: -4000px;
+}
+.clear { clear: both; }
+
+p.notice {
+	background: #FFFFDD;
+	border: 3px solid #FFCC33;
+	color: #CC9900;
+	display: block;
+	font-size: 12px;
+	margin: 0 0 10px;
+	padding: 10px 10px 10px 30px;
+}
+p.success {
+	background: #CCFF99;
+	border-color: #66CC66;
+	color: #339900;
+}
+p.error {
+	background: #FFDDFF;
+	border-color: #FF6666;
+	color: #FF0000;
+}
+p.help {
+}

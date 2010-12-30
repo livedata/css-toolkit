@@ -1,0 +1,109 @@
+
+/* Font Sizes
++-----------------------------------*/
+.small 		{ font-size: 0.9em; }
+.smaller 	{ font-size: 0.7em; }
+.smallest 	{ font-size: 0.5em; }
+.tiny		{ font-size: 0.3em; }
+
+.big 		{ font-size: 12px; }
+.bigger 	{ font-size: 1.55em; }
+.biggest 	{ font-size: 2.4em; }
+.huge 		{ font-size: 3em; }
+
+/* Font Weights
++-----------------------------------------------*/
+.thinest 	{ font-weight: 100; }
+.thinner 	{ font-weight: 300; }
+.thin 		{ font-weight: 400; }
+.normal		{ font-weight: 500; }
+.thick 		{ font-weight: 600; }
+.thicker 	{ font-weight: 700; }
+.thickest 	{ font-weight: 900; }
+
+.camel		{ text-transform: none; }
+.upper		{ text-transform: uppercase; }
+.lower		{ text-transform: lowercase; }
+
+.overline 		{ text-decoration: overline; }
+.underline 		{ text-decoration: underline; }
+.strikethrough 	{ text-decoration: line-through; }
+
+.style 		{ font-style: oblique; }
+.normal 	{ font-style: normal; }
+.italic 	{ font-style: italic; }
+
+/* Type Alignment
++-----------------------------------------------*/
+.alignRight 	{ text-align: right; } 		/*  Align element text left */
+.alignLeft 		{ text-align: left; } 		/*  Align element text right */
+.alignCenter	{ text-align: center; } 	/*  Align element text center */
+.alignJustify	{ text-align: justify; } 	/*  Align element text justified */	
+
+/* Drop Caps (Define in PX)
++-------------------------------------------*/
+		
+.fancy:first-letter {
+	display: block;
+	padding: 0;
+	margin: 7px 4px -2px 0px;
+	float: left;
+	font-size: 3em;
+	font-family: Georgia;
+	line-height: 2.6em;
+}
+.dropcap {
+	display: block;
+	padding: 0;
+	margin: 7px 4px -2px 0px;
+	float: left;
+	font-size: 3em;
+	font-family: Georgia;
+	font-weight: 600;
+	line-height: 0.65em;
+}
+.fancySans:first-letter {
+	display: block;
+	padding: 0;
+	margin: 10px 7px -2px 0px;
+	float: left;
+	font-size: 3.8em;
+	font-family: Tahoma;
+	font-weight: 600;
+	line-height: 0.55em;
+}
+.dropcapSans {
+	display: block;
+	padding: 0;
+	margin: 10px 7px -2px 0px;
+	float: left;
+	font-size: 3.8em;
+	font-family: Tahoma;
+	font-weight: 900;
+	line-height: 0.55em;
+}
+.dropcapCursive {
+	display: block;
+	padding: 0;
+	margin: 7px 10px -2px 0px;
+	float: left;
+	font-size: 40px;
+	font-family: "Monotype Corsiva", "Apple Chancery", "URW Chancery L", cursive;
+	font-weight: 600;
+	line-height: 30px;
+}
+.bigQuote {
+	display: block;
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 350px;
+	font-weight: 500;
+	height: 130px;
+	left: 0;
+	line-height: 1em;
+	overflow: hidden;
+	position: absolute;
+	top: 10px;
+	vertical-align: sub;
+	width: 130px;
+	z-index: 1;
+}

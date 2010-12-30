@@ -1,0 +1,149 @@
+
+/* Sizing
++-----------------------------------------------*/
+.fluidHeight 	{ height: 	auto; }
+.fluidWidth 	{ width: 	auto; }
+.stretchWidth 	{ width: 	100%; }
+.stretchHeight	{ height: 	100%; }
+		
+/* Margins
++-----------------------------------------------*/
+.noMargin 				{ margin: 			0; }
+	.noMarginTop 		{ margin-top: 		0; }
+	.noMarginRight 		{ margin-right: 	0; }
+	.noMarginLeft 		{ margin-left: 		0; }
+	.noMarginBottom 	{ margin-bottom: 	0; }
+	
+.autoMargin 			{ margin: 			10px; }
+	.autoMarginTop 		{ margin-top: 		10px; }
+	.autoMarginRight 	{ margin-right: 	10px; }
+	.autoMarginLeft 	{ margin-left: 		10px; }
+	.autoMarginBottom 	{ margin-bottom: 	10px; }
+	
+.doubleMargin			{ margin: 			20px; }
+	.doubleMarginTop 	{ margin-top: 		20px; }
+	.doubleMarginRight 	{ margin-right: 	20px; }
+	.doubleMarginLeft 	{ margin-left: 		20px; }
+	.doubleMarginBottom { margin-bottom: 	20px; }
+	
+.indent 				{ margin-left: 		50px; }
+.doubleIndent 			{ margin-left: 		100px; }
+	
+/* Paddings
++-----------------------------------------------*/
+.noPadding 					{ padding: 			0; }
+	.noPaddingTop 			{ padding-top: 		0; }
+	.noPaddingRight 		{ padding-right: 	0; }
+	.noPaddingLeft 			{ padding-left: 	0; }
+	.noPaddingBottom 		{ padding-bottom: 	0; }
+	
+.autoPadding 				{ padding: 			10px; }
+	.autoPaddingTop 		{ padding-top: 		10px; }
+	.autoPaddingRight 		{ padding-right: 	10px; }
+	.autoPaddingLeft 		{ padding-left: 	10px; }
+	.autoPaddingBottom 		{ padding-bottom: 	10px; }
+	
+.doublePadding 				{ padding: 			20px; }
+	.doublePaddingTop 		{ padding-top: 		20px; }
+	.doublePaddingRight 	{ padding-right: 	20px; }
+	.doublePaddingLeft 		{ padding-left: 	20px; }
+	.doublePaddingBottom 	{ padding-bottom: 	20px; }
+	
+/* Borders
++-----------------------------------------------*/
+.noBorder 				{ border: 			0; }
+	.noBorderTop 		{ border-top: 		0; }
+	.noBorderRight 		{ border-right: 	0; }
+	.noBorderLeft 		{ border-left: 		0; }
+	.noBorderBottom 	{ border-bottom: 	0; }
+	
+.autoBorder 			{ border: 			5px solid; }
+	.autoBorderTop 		{ border-top: 		5px solid; }
+	.autoBorderRight 	{ border-right: 	5px solid; }
+	.autoBorderLeft 	{ border-left: 		5px solid; }
+	.autoBorderBottom 	{ border-bottom: 	5px solid; }
+
+.dotted { border-style: dotted; }
+.dashed { border-style: dashed; }
+.solid 	{ border-style: solid; }
+.double { border-style: double; }
+.groove { border-style: groove; }
+.inset 	{ border-style: inset;  }
+.outset { border-style: outset; }
+
+.borderThin 	{ border-width: 1px; }
+.borderMedium 	{ border-width: 3px; }
+.borderThick 	{ border-width: 5px; }
+	
+/* Overflows
++-----------------------------------------------*/
+.overflowHidden 	{ overflow: hidden; }
+.overflowVisible 	{ overflow: visible; }
+.overflowScroll 	{ overflow: scroll; }
+	
+/* Positioning
++-----------------------------------------------*/
+.relative 	{ position: relative; }
+.absolute 	{ position: absolute; }
+.static 	{ position: static; }
+
+/* Floats
++-----------------------------------------------*/
+.floatRight 	{ float: right; } 	/*  Float any element left */
+.floatLeft 		{ float: left; } 	/*  Float any element right */
+.floatNone		{ float: none; }
+
+/* Clears
++-------------------------------------------*/
+.clear 			{ clear: both; }
+.clearRight 	{ clear: right; }
+.clearLeft 		{ clear: left; }
+.clearfix 		{ display: inline-block; }
+	.clearfix:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+	html[xmlns] .clearfix 	{ display: block;}
+	* html .clearfix 		{ height: 1%; }
+
+/* Displays
++-----------------------------------------------*/
+.block			{ display: block; }
+.inline			{ display: inline; }
+.inlineBlock	{ display: inline-block; }
+.inlineTable 	{ display: inline-table; }
+.table			{ display: table; }
+.tableCell		{ display: table-cell; }
+.tableRow		{ display: table-row; }
+.tableBody		{ display: table-row-group; }
+.tableHead		{ display: table-header-group; }
+.tableFoot		{ display: table-footer-group; }
+.listItem		{ display: list-item; }
+.runIn			{ display: run-in; }
+.none			{ display: none; }
+.inherit 		{ 
+					display: inherit;
+					font-size: inherit;
+					font-weight: inherit;
+					font-style: inherit;
+					font-family: inherit;
+					text-transform: inherit;
+					text-decoration: inherit;
+					color: inherit;
+				}
+				
+/* Lists
++-----------------------------------------------*/			
+.plain		{ list-style-type: none; }
+.disc 		{ list-style-type: disc; }
+.square 	{ list-style-type: square; }
+.circle 	{ list-style-type: circle; }
+.decimal 	{ list-style-type: decimal; }
+.letters 	{ list-style-type: lower-latin; }
+
+.outside 	{ list-style-position: outside; }
+.inside 	{ list-style-position: inside; }
